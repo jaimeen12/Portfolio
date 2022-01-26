@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script
+      src="https://kit.fontawesome.com/1ada685ac3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FTP Server</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item current">
+            <a href="../about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="../work.html" class="nav-link">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="../contact.html" class="nav-link">How to reach me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="about">
+      <h1 class="lg-heading">
+        Hiking <span class="text-secondary"> Organizer</span>
+      </h1>
+      <h2 class="sm-heading">University of Witwatersrand | Software Development 3</h2>
+      <div class="about-info">
+        <!-- <img src="img/portrait_s.jpg" alt="Jaimeen" class="bio-image" /> -->
+        <div class="bio">
+          <div class="projects">
+            <div class="item">
+              <iframe width="1000" height="615" src="https://www.youtube.com/embed/FFXB3h-X9TU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <br>
+          <h3 class="text-secondary">Background</h3>
+          <p>
+            Groups of four were created and the aim of the project was to utilise Agile methodologies to create a Web Application which allows hikers to connect. An MVC architecture was used in conjunction with Pug as a template engine and passport.js for security. The App was deployed on the Microsoft Azure platform, utilising Travis CI for Continuous Integration.
+          </p>
+          <br>
+          <h3 class="text-secondary">Features</h3>
+          <p>
+            <ul>
+              <li>A user can create an account and log into the app.</li>
+              <li>A user can be a member of at most 5 hiking groups at once.</li>
+              <li>A user is able to create a new hiking group and/or apply to join existing ones.</li>
+              <li>A group member can post messages to the hiking group and interact with other group members.</li>
+              <li>A group member can organise a hiking session by posting location and time to the group. An invite for a hiking session can only be accepted by the members who comply with Covid-19 screening regulations.</li>
+              <li>A new membership application to an existing hiking group is accepted only if the majority of the members of the group vote in favour of the applicant.</li>
+            </ul>
+          </p>
+          
+          <br>
+          
+          <h3 class="text-secondary">My Contributions</h3>
+        </div>
+        <div class="job job-1">
+          <h3>User Registration</h3>
+          <h5>Allowed Users to Register with a Username and Password</h5>
+          <p>
+            <ul>
+            <li>Utilised Sequelize as an Object-Relational Mapper to store Users a database</li> 
+            <li>The passwords were encrypted using the crypto library and the SHA512 hashing algorithm</li>
+          </ul>
+          </p>
+        </div>
+        <div class="job job-2">
+          <h3>Groups</h3>
+          <h5>Users can Create and Join Hiking Groups</h5>
+          <p>
+            <ul>
+              <li>Implemented a Many-to-Many relationship between Users and Groups to allow Users to Create and Join Groups</li> 
+              <li>Users can send other Users an Invite to a Group. Group Invites are displayed on the Users Dashboard</li>
+            </ul>
+          </p>
+        </div>
+        <div class="job job-3">
+          <h3>Voting System</h3>
+          <h6>Users can only be accepted into a Group if majority of the Group Members Accept the Request</h6>
+          <p>
+            <ul>
+              <li>Implemented a Voting system which notifies all group members when a New Member requests to join the Group</li> 
+              <li>The User will be added to the group once majority of Users Accept the Request</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer id="main-footer">Copyright &copy; 2021</footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
