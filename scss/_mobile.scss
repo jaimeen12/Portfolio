@@ -18,14 +18,13 @@
 
     .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem;
       position: relative;
-      top: -80px;
+      top: -35px;
     }
 
     .sm-heading {
       position: relative;
-      top: -30px;
+      top: -10px;
     }
   }
 
@@ -66,6 +65,14 @@
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
+    .sm-heading {
+      position: relative;
+      margin-top: 5vh;
+    }
+
+    .item {
+      margin-top: 3vh;
+    }
   }
 }
 //phone
@@ -77,6 +84,7 @@
   main#home .lg-heading {
     position: relative;
     top: 10px;
+    left: -10px;
   }
 
   main#home .sm-heading {
