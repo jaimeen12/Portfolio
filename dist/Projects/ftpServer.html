@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script
+      src="https://kit.fontawesome.com/1ada685ac3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FTP Server</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item current">
+            <a href="../about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="../work.html" class="nav-link">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="../contact.html" class="nav-link">How to reach me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="about">
+      <h1 class="lg-heading">
+        FTP <span class="text-secondary"> Server</span>
+      </h1>
+      <h2 class="sm-heading">University of Witwatersrand | Computer Networks</h2>
+      <div class="about-info">
+        <!-- <img src="img/portrait_s.jpg" alt="Jaimeen" class="bio-image" /> -->
+        <div class="bio">
+          <div class="projects">
+            <div class="item">
+              <iframe width="1000" height="615" src="https://www.youtube.com/embed/FFXB3h-X9TU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <br>
+          <h3 class="text-secondary">Background</h3>
+          <p>
+            The project was a solo project and it was part of the Computer Networking course. The course introduced us to the OSI model and expanded on the layers in the model. The aim of the project was to build a Multi-Threaded FTP Server using basic TCP and UDP connections. The project was implemented in Python using the Sockets library. The TCP and UDP connections were captured in Wireshark and analysed to gain a better understanding of the various protocols followed by an FTP Server.
+          </p>
+          <br>
+          <h3 class="text-secondary">Features</h3>
+          <p>
+            <ul>
+              <li>Multi-threaded server(a new thread is created for each client).</li>
+              <li>User Credential check.</li>
+              <li>Seperate Directories for Users.</li>
+              <li>Receive and Store files on the server.</li>
+              <li>Interface with generic FTP clients(Eg. Filezilla)</li>
+            </ul>
+          </p>
+          
+          <br>
+          
+        </div>
+        
+        
+        
+      </div>
+    </main>
+
+    <footer id="main-footer">Copyright &copy; 2021</footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
